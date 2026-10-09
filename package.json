@@ -1,0 +1,40 @@
+{
+  "name": "whatsapp-webhook-kit",
+  "version": "0.1.0",
+  "description": "Exactly-once, in-order WhatsApp Cloud API webhook processing for TypeScript. Signature verification, payload normalization, idempotent claims, per-conversation sharded queue with retries and dead-letter. Zero runtime dependencies.",
+  "type": "module",
+  "main": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "whatsapp",
+    "whatsapp-cloud-api",
+    "webhook",
+    "meta",
+    "idempotency",
+    "exactly-once",
+    "queue",
+    "redis",
+    "sharding",
+    "fifo",
+    "typescript"
+  ],
+  "author": "UseFlowy",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^5.9.3",
+    "vitest": "^4"
+  }
+}
